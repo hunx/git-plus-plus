@@ -1,5 +1,5 @@
 git = require '../git'
-MergeListView = require '../views/merge-list-view'
+MergeNoffListView = require '../views/merge-noff-list-view'
 
 module.exports = (repo, {remote}={}) ->
   args = ['branch']

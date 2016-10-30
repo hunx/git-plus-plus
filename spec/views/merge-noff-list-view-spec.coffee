@@ -1,10 +1,10 @@
 git = require '../../lib/git'
 {repo} = require '../fixtures'
-MergeListView = require '../../lib/views/merge-list-view'
+MergeNoffListView = require '../../lib/views/merge-noff-list-view'
 
-describe "MergeListView", ->
+describe "MergeNoffListView", ->
   beforeEach ->
-    @view = new MergeListView(repo, "branch1\nbranch2")
+    @view = new MergeNoffListView(repo, "branch1\nbranch2")
     spyOn(git, 'cmd').andCallFake -> Promise.resolve ''
 
   it "displays a list of branches", ->
@@ -13,4 +13,4 @@ describe "MergeListView", ->
   it "calls git.cmd with 'merge branch1' when branch1 is selected", ->
     @view.confirmSelection()
     waitsFor -> git.cmd.callCount > 0
-    expect(git.cmd).toHaveBeenCalledWith ['merge', 'branch1'], cwd: repo.getWorkingDirectory()
+    expect(git.cmd).toHaveBeenCalledWith ['merge','--no-ff', 'branch1'], cwd: repo.getWorkingDirectory()

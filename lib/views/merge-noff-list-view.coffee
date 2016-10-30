@@ -3,6 +3,7 @@ fs = require 'fs-plus'
 git = require '../git'
 OutputViewManager = require '../output-view-manager'
 notifier = require '../notifier'
+MergeListView = require './merge-list-view'
 
 module.exports =
 class MergeNoffListView extends MergeListView
