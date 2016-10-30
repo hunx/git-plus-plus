@@ -6,7 +6,7 @@ notifier = require '../notifier'
 
 module.exports =
 class ListView extends SelectListView
-  args: ['meger']
+  args: ['merge']
   initialize: (@repo, @data) ->
     super
     @show()

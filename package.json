@@ -1,7 +1,7 @@
 {
     "name": "git-plus-plus",
     "main": "./lib/git-plus",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "git-plus add sth by myself",
     "keywords": [
         "git"
@@ -13,10 +13,10 @@
             }
         }
     },
-    "repository": "https://github.com/atom/git-plus-plus",
+    "repository": "https://github.com/hunx/git-plus-plus",
     "license": "MIT",
     "engines": {
-        "atom": ">=1.0.0 <2.0.0"
+        "atom": ">=1.0.0"
     },
     "dependencies": {
         "atom-notify": "^1.1.0",
