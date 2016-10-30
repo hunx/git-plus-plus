@@ -1,7 +1,7 @@
 {
   "name": "git-plus-plus",
   "main": "./lib/git-plus",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "git-plus add sth by myself",
   "keywords": [
     "git"
