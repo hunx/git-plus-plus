@@ -1,7 +1,7 @@
 {
   "name": "git-plus-plus",
   "main": "./lib/git-plus",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "fix git merge without fast forward by git-plus.",
   "keywords": [
     "git"
