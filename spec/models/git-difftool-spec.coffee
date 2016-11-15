@@ -1,5 +1,4 @@
 fs = require 'fs-plus'
-Path = require 'flavored-path'
 {repo, pathToSampleDir, pathToRepoFile} = require '../fixtures'
 git = require '../../lib/git'
 GitDiffTool = require '../../lib/models/git-difftool'
@@ -8,7 +7,6 @@ describe "GitDiffTool", ->
   describe "Using includeStagedDiff", ->
     beforeEach ->
       atom.config.set 'git-plus.includeStagedDiff', true
-      # git.cmd ['config', 'diff.tool', 'meld']
       spyOn(git, 'cmd').andReturn Promise.resolve('diffs')
       spyOn(git, 'getConfig').andReturn Promise.resolve('some-tool')
       waitsForPromise ->
