@@ -2,7 +2,7 @@
   "name": "git-plus-plus",
   "main": "./lib/git-plus",
   "version": "0.4.0",
-  "description": "git-plus add sth by myself",
+  "description": "fix git merge without fast forward by git-plus.",
   "keywords": [
     "git"
   ],
